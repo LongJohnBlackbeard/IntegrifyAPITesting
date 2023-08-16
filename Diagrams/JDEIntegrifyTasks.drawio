@@ -1,9 +1,54 @@
-<mxfile host="app.diagrams.net" modified="2023-08-16T19:48:45.672Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" version="21.6.7" etag="T--E3UCzKAFkn6_NDvvm" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-16T20:39:54.253Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="B-jHnh2-KMf0kHFZGMQn" version="21.6.7" type="github">
   <diagram name="Page-1" id="UEboViyW_FA2UY19EqLy">
-    <mxGraphModel>
+    <mxGraphModel dx="1195" dy="1763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="dT_ErZ5AVIkb5ZRzCfrx-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.2;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="dT_ErZ5AVIkb5ZRzCfrx-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="270" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dT_ErZ5AVIkb5ZRzCfrx-1" value="Whenever a form task is opened/submitted,&lt;br&gt;make API call to API service &lt;br&gt;via JavaScript" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.start" vertex="1" parent="1">
+          <mxGeometry x="30" y="235" width="230" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dT_ErZ5AVIkb5ZRzCfrx-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dT_ErZ5AVIkb5ZRzCfrx-3" target="dT_ErZ5AVIkb5ZRzCfrx-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="415" y="360" />
+              <mxPoint x="545" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dT_ErZ5AVIkb5ZRzCfrx-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.585;entryY=0.01;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="dT_ErZ5AVIkb5ZRzCfrx-3" target="dT_ErZ5AVIkb5ZRzCfrx-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="415" y="360" />
+              <mxPoint x="177" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dT_ErZ5AVIkb5ZRzCfrx-3" value="" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];verticalLabelPosition=bottom;align=center;verticalAlign=top;shape=mxgraph.kubernetes.icon;prIcon=api" vertex="1" parent="1">
+          <mxGeometry x="330" y="220" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="dT_ErZ5AVIkb5ZRzCfrx-5" value="API processes data from integrify and either updates JDE table or make orchestrations call" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="312.5" y="180" width="205" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dT_ErZ5AVIkb5ZRzCfrx-6" value="Oracle JDE&lt;br&gt;Integrify Task Table" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="410" width="150" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="dT_ErZ5AVIkb5ZRzCfrx-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dT_ErZ5AVIkb5ZRzCfrx-8" target="dT_ErZ5AVIkb5ZRzCfrx-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dT_ErZ5AVIkb5ZRzCfrx-8" value="JDE Orchestration" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="60" y="415" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="dT_ErZ5AVIkb5ZRzCfrx-10" value="OR" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="385" y="360" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dT_ErZ5AVIkb5ZRzCfrx-15" value="&lt;h1&gt;&lt;b style=&quot;border-color: var(--border-color); font-size: 18px; text-align: center;&quot;&gt;Form trigger JDE Task Update&lt;/b&gt;&lt;br&gt;&lt;/h1&gt;&lt;p&gt;Easiest Option. Anytime a form is initialized or submitted, JavaScript would make an API call to a service that would either Query JDE table with its associated task and update the record or call an Orchestration that will do the updates.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="215" width="400" height="120" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
