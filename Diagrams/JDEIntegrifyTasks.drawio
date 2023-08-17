@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-16T21:34:58.429Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="hHKudrsPARFWSNKtv7-g" version="21.6.7" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-08-17T15:51:23.364Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="TvkFZ8duSGhlXJTwqP9n" version="21.6.7" type="github" pages="4">
   <diagram name="Form JS" id="UEboViyW_FA2UY19EqLy">
     <mxGraphModel dx="1195" dy="1763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -120,6 +120,72 @@
         </mxCell>
         <mxCell id="cBJkL82jfERH6a2xq9UV-4" value="Oracle JDE DB" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="590" y="145" width="160" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="lRWk4_ODTDfS7Gkroohk" name="Page-4">
+    <mxGraphModel dx="1434" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gPPK4Bj2-WrlHCHlGKXN-1" value="&lt;h1&gt;Integrify API Call on JDE Order Creation&lt;/h1&gt;&lt;p&gt;One major issue that the other designs don&#39;t handle well is that an Integrify request is tied to a P/Q number and a Line item number. There is no way to correlate a Integrify request while it is being conducted to anything in JDE because a JDE WO is not created until PES has created the order and the order is brought in. Therefore, there is no JDE WO order as well as the reflection number is not created until after a Integrify Request is completed and the order in PES is released. This design will have an JDE orchestration kick off when an order is brought into JDE. It will make an API call to either Integrify or a custom made middleware, passing the reflection number and JDE WO number. With that we can make API calls to integrify and find all associated instances and tasks. Then that information can be compiled and inserted into a JDE table&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="10" width="695" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="gPPK4Bj2-WrlHCHlGKXN-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="gPPK4Bj2-WrlHCHlGKXN-2" target="gPPK4Bj2-WrlHCHlGKXN-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gPPK4Bj2-WrlHCHlGKXN-2" value="JDE Order Created/brought in from PES" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.start" vertex="1" parent="1">
+          <mxGeometry x="10" y="200" width="210" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="gPPK4Bj2-WrlHCHlGKXN-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="gPPK4Bj2-WrlHCHlGKXN-3" target="gPPK4Bj2-WrlHCHlGKXN-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gPPK4Bj2-WrlHCHlGKXN-3" value="Trigger JDE Orchestration" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="195" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gPPK4Bj2-WrlHCHlGKXN-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="gPPK4Bj2-WrlHCHlGKXN-6" target="gPPK4Bj2-WrlHCHlGKXN-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="300" />
+              <mxPoint x="710" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gPPK4Bj2-WrlHCHlGKXN-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gPPK4Bj2-WrlHCHlGKXN-6" target="gPPK4Bj2-WrlHCHlGKXN-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="300" />
+              <mxPoint x="455" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gPPK4Bj2-WrlHCHlGKXN-6" value="API Service/middleware" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="557.5" y="182.5" width="105" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="gPPK4Bj2-WrlHCHlGKXN-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="gPPK4Bj2-WrlHCHlGKXN-10" target="gPPK4Bj2-WrlHCHlGKXN-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gPPK4Bj2-WrlHCHlGKXN-10" value="Integrify API" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="402.5" y="400" width="105" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="gPPK4Bj2-WrlHCHlGKXN-12" value="Oracle JDE DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="640" y="400" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="gPPK4Bj2-WrlHCHlGKXN-14" value="WO Num" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="425" y="210" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gPPK4Bj2-WrlHCHlGKXN-15" value="REFL Num" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="417.5" y="230" width="75" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gPPK4Bj2-WrlHCHlGKXN-18" value="REFL Num" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="408" y="330" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gPPK4Bj2-WrlHCHlGKXN-19" value="Instances/Tasks" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="430" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gPPK4Bj2-WrlHCHlGKXN-20" value="Instance/Task&lt;br&gt;Records" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="720" y="330" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
