@@ -1,9 +1,90 @@
-<mxfile host="app.diagrams.net" modified="2023-10-18T14:10:25.512Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" version="22.0.0" etag="wI9UUecQTWgKTKWkihL0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-18T14:19:28.849Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="FqAN5TGbVx2eL7zS8_dt" version="22.0.0" type="github">
   <diagram name="Page-1" id="H0ImXdIIBEcCOpAkGCC1">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Q-ovtvuvheKhh1BfWdY8-1" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#8C4FFF;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.endpoint;" vertex="1" parent="1">
+          <mxGeometry x="70" y="110" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-ovtvuvheKhh1BfWdY8-2" value="&lt;b&gt;WO Endpoint&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="95" y="240" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-ovtvuvheKhh1BfWdY8-3" value="Query WO Information" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#99ffff;shape=mxgraph.archimate3.application;appType=func;archiType=rounded;" vertex="1" parent="1">
+          <mxGeometry x="290" y="128" width="150" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-ovtvuvheKhh1BfWdY8-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Q-ovtvuvheKhh1BfWdY8-1" target="Q-ovtvuvheKhh1BfWdY8-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-ovtvuvheKhh1BfWdY8-5" value="Query all Viable Heats" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#99ffff;shape=mxgraph.archimate3.application;appType=func;archiType=rounded;" vertex="1" parent="1">
+          <mxGeometry x="570" y="128" width="150" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-ovtvuvheKhh1BfWdY8-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Q-ovtvuvheKhh1BfWdY8-3" target="Q-ovtvuvheKhh1BfWdY8-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-ovtvuvheKhh1BfWdY8-7" value="Initialize Heat Thread Handler" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#99ffff;shape=mxgraph.archimate3.application;appType=func;archiType=rounded;" vertex="1" parent="1">
+          <mxGeometry x="570" y="310" width="150" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-ovtvuvheKhh1BfWdY8-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Q-ovtvuvheKhh1BfWdY8-5" target="Q-ovtvuvheKhh1BfWdY8-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-ovtvuvheKhh1BfWdY8-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Q-ovtvuvheKhh1BfWdY8-9" target="Q-ovtvuvheKhh1BfWdY8-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-ovtvuvheKhh1BfWdY8-9" value="Flatten Iterables, create Concurrent Bag return structure,&lt;br&gt;set Constants" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#99ffff;shape=mxgraph.archimate3.application;appType=func;archiType=rounded;" vertex="1" parent="1">
+          <mxGeometry x="300" y="310" width="180" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-ovtvuvheKhh1BfWdY8-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Q-ovtvuvheKhh1BfWdY8-7" target="Q-ovtvuvheKhh1BfWdY8-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-ovtvuvheKhh1BfWdY8-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Q-ovtvuvheKhh1BfWdY8-11" target="Q-ovtvuvheKhh1BfWdY8-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-ovtvuvheKhh1BfWdY8-11" value="Call Async Parallel" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#99ffff;shape=mxgraph.archimate3.application;appType=func;archiType=rounded;" vertex="1" parent="1">
+          <mxGeometry x="55" y="310" width="150" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-ovtvuvheKhh1BfWdY8-13" value="Async Parallel checks iterable check type and performs match checking" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#99ffff;shape=mxgraph.archimate3.application;appType=func;archiType=rounded;" vertex="1" parent="1">
+          <mxGeometry x="50" y="475" width="160" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-ovtvuvheKhh1BfWdY8-15" value="Uses LinkQ to set results in the Concurrent Bag" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#99ffff;shape=mxgraph.archimate3.application;appType=func;archiType=rounded;" vertex="1" parent="1">
+          <mxGeometry x="310" y="475" width="180" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-ovtvuvheKhh1BfWdY8-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Q-ovtvuvheKhh1BfWdY8-13" target="Q-ovtvuvheKhh1BfWdY8-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-ovtvuvheKhh1BfWdY8-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Q-ovtvuvheKhh1BfWdY8-17" target="Q-ovtvuvheKhh1BfWdY8-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-ovtvuvheKhh1BfWdY8-17" value="When match codes are finished, Delete Query records in F5548300 for that WO" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#99ffff;shape=mxgraph.archimate3.application;appType=func;archiType=rounded;" vertex="1" parent="1">
+          <mxGeometry x="590" y="475" width="150" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-ovtvuvheKhh1BfWdY8-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Q-ovtvuvheKhh1BfWdY8-15" target="Q-ovtvuvheKhh1BfWdY8-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-ovtvuvheKhh1BfWdY8-19" value="Call Orch to get and set the NextNumber for F5548300" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#99ffff;shape=mxgraph.archimate3.application;appType=func;archiType=rounded;" vertex="1" parent="1">
+          <mxGeometry x="590" y="630" width="150" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-ovtvuvheKhh1BfWdY8-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Q-ovtvuvheKhh1BfWdY8-21" target="Q-ovtvuvheKhh1BfWdY8-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-ovtvuvheKhh1BfWdY8-21" value="Uses Next Number Range to set UKID for the records" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#99ffff;shape=mxgraph.archimate3.application;appType=func;archiType=rounded;" vertex="1" parent="1">
+          <mxGeometry x="325" y="630" width="150" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-ovtvuvheKhh1BfWdY8-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Q-ovtvuvheKhh1BfWdY8-19" target="Q-ovtvuvheKhh1BfWdY8-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-ovtvuvheKhh1BfWdY8-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q-ovtvuvheKhh1BfWdY8-23" target="Q-ovtvuvheKhh1BfWdY8-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-ovtvuvheKhh1BfWdY8-23" value="Parallel Async DB Inserts&lt;br&gt;Into F5548300" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#99ffff;shape=mxgraph.archimate3.application;appType=func;archiType=rounded;" vertex="1" parent="1">
+          <mxGeometry x="55" y="630" width="150" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-ovtvuvheKhh1BfWdY8-25" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="80" y="770" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-ovtvuvheKhh1BfWdY8-27" value="&lt;b&gt;END&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="95" y="940" width="60" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
